@@ -1,6 +1,13 @@
 <template>
   <div class="min-h-screen flex flex-col justify-center items-center bg-blue-50">
     <div class="bg-white rounded-lg shadow p-8 max-w-md w-full">
+      <div class="flex justify-center mb-6">
+      <img 
+      src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" 
+      alt="logo" 
+      class="w-24 h-24 mb-4"
+          />
+      </div>
       <h1 class="text-2xl font-bold mb-6 text-blue-700">Login</h1>
       <form @submit.prevent="login" class="flex flex-col gap-4">
         <input

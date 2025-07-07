@@ -6,6 +6,14 @@ const userSchema = new mongoose.Schema({
   address:  { type: String, required: true },
   email:    { type: String, unique: true, required: true },
   password: { type: String, required: true },
+  phone:    { type: String },
+  summary:  { type: String },
+  experiences: [{ type: String }],
+  education:   [{ type: String }],
+  skills:      { type: String },
+  linkedin:    { type: String },
+  github:      { type: String },
+  portfolio:   { type: String },
 });
 
 userSchema.pre('save', async function (next) {

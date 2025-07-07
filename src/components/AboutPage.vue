@@ -1,10 +1,10 @@
 <template>
   <div class="min-h-screen flex flex-col justify-center items-center bg-blue-50">
     <div class="bg-white rounded-lg shadow p-8 max-w-lg w-full">
-      <h1 class="text-3xl font-bold mb-4 text-blue-700">Sobre</h1>
+      <h1 class="text-3xl font-bold mb-4 text-blue-700">Sobre nós</h1>
       <p class="mb-6 text-gray-700">
-        Este sistema foi desenvolvido para facilitar o cadastro e a gestão de usuários de forma simples e eficiente.<br>
-        Se quiser saber mais ou enviar sugestões, utilize o formulário abaixo.
+        O objetivo desse site é um trabalho onde o usuário possa cadastrar curriculos. Gerenciar seu perfil e exportar seus documentos. 
+        Além de compartilhar nas redes sociais.
       </p>
       <form @submit.prevent="sendMessage" class="flex flex-col gap-4">
         <label class="font-semibold text-gray-600">Envie sua mensagem:</label>
@@ -15,7 +15,7 @@
       </form>
     </div>
   </div>
-</template>
+</template> 
 
 <script>
 import axios from "axios";

@@ -3,9 +3,9 @@ const User = require('../models/user');
 const { jwtSecret } = require('../config');
 
 exports.register = async (req, res) => {
-  const { name, address, email, password } = req.body;
+  const { name, address, email, password, phone, summary, experiences, education, skills, linkedin, github, portfolio } = req.body;
   try {
-    const user = new User({ name, address, email, password });
+    const user = new User({ name, address, email, password, phone, summary, experiences, education, skills, linkedin, github, portfolio });
     await user.save();
     const token = jwt.sign({ id: user._id }, jwtSecret, { expiresIn: '1h' });
     res.status(201).json({ token });

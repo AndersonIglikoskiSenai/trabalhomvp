@@ -37,7 +37,7 @@
     </main>
 
     <footer class="bg-gray-100 text-center py-4 text-gray-600">
-      &copy; 2025 Sistema Básico de Cadastro. Todos os direitos reservados.
+      &copy; 2025 Dev-Anderson. Todos os direitos reservados.
     </footer>
   </div>
 </template>
